@@ -1,5 +1,4 @@
 import Logo from "../images/Logo";
-import { Home, Proyectos } from "@/app/ui/components/buttons/Button";
 import Theme from "@/app/lib/Themes";
 import { MenuP } from "@/app/lib/Menu";
 import { Search } from '@/app/lib/inputs'

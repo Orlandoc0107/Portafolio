@@ -1,8 +1,8 @@
 'use client'
 
 import { useState } from "react";
-import Link from "next/link";
 import { Github, Sobre, Linkedin, Hogar } from "@/app/ui/components/images/icons";
+import Image from "next/image";
 
 export function MenuP() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,7 +13,7 @@ export function MenuP() {
 
   return (
     <div className="relative">
-      <img
+      <Image
         src="/icons/menu-hamburguesa.png"
         width={25}
         height={25}
@@ -27,26 +27,26 @@ export function MenuP() {
             <li className="flex items-center">
               <div className="w-6 h-6">
                 <Hogar />
+                <span className="ml-2">Home</span>
               </div>
-              <span className="ml-2">Home</span>
             </li>
             <li className="flex items-center">
               <div className="w-6 h-6">
                 <Github />
+                <span className="ml-2">Github</span>
               </div>
-              <span className="ml-2">Github</span>
             </li>
             <li className="flex items-center">
               <div className="w-6 h-6">
                 <Sobre />
+                <span className="ml-2">Contact</span>
               </div>
-              <span className="ml-2">Contact</span>
             </li>
             <li className="flex items-center">
               <div className="w-6 h-6">
                 <Linkedin />
+                <span className="ml-2">Linkedin</span>
               </div>
-              <span className="ml-2">Linkedin</span>
             </li>
           </ul>
         </div>
