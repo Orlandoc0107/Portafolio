@@ -2,12 +2,12 @@ export const dataProjects = [
   {
     id: 1,
     numer: "Proyect 2",
-    name: "Pagina Web",
-    image: "/",
-    description: "",
-    technologies: "",
-    url: "",
-    github: "",
+    name: "tp",
+    image: "/Proyect2.png",
+    description: "Nota: Breaches:Api-Rest . API rest , Django Presentado en el Curso de Fullstack Python en Argentina Programa",
+    technologies: "Python// Django (==4.0.6), django-cors-headers, djangorestframework, djangorestframework-simplejwt, coreapi, setuptools",
+    url: " ... ",
+    github: "https://github.com/Orlandoc0107/tp/tree/Api-Rest",
   },
   {
     id: 2,
