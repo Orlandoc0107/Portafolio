@@ -4,7 +4,7 @@ import { Github, Linkedin, Sobre } from "@/app/ui/components/images/icons";
 export default function PrinciFoother() {
   return (
     <div>
-      <div className="flex items-center justify-center content-center">
+      <div className="flex items-center justify-center content-center ">
       <p>Derechos de autor © 2023 Orlando Cardenas V. Todos los derechos reservados. </p>
       </div>
       <hr/>

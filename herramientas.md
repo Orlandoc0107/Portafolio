@@ -10,3 +10,7 @@ https://www.flaticon.es/
 #75A6A3  --> bg-sky-500
 #DEE4C0  --> bg-amber-200
 #F5F4E1  --> bg-amber-50
+
+https://www.pexels.com/es-es/foto/arboles-1061623/
+
+https://www.pexels.com/es-es/foto/naturaleza-cielo-noche-espacio-2387877/

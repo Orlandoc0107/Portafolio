@@ -9,6 +9,10 @@ const config: Config = {
   darkMode: 'class',
   theme: {
     extend: {
+      backgroundImage: {
+        'image1': "url('/pexels-sam-kolder-2387877.jpg')",
+        'image2': "url('/pexels-vlad-bagacian-1061623.jpg')",
+      }
     },
   },
   plugins: [

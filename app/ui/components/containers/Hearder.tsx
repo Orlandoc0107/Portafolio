@@ -6,17 +6,19 @@ import { Search } from '@/app/lib/inputs'
 export default function PrincHearder() {
   return (
     <div className="
-    flex justify-between ... 
-    sticky top-0 z-100... 
-    p-2 shadow-2xl ...
+    z-20
+    flex justify-between 
+    sticky top-0 z-100
+    p-2 shadow-2xl
+    bg-opacity-75
     ">
-      <div>
+      <div className="z-30">
         <Logo />
       </div>
-      <div className="flex gap-1">
+      <div className="z-20 flex gap-1">
           <Search />
         </div>
-      <div className="flex gap-4 p-2">
+      <div className="z-20 flex gap-4 p-2">
         <MenuP />
         <Theme />
       </div>

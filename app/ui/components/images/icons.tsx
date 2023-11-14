@@ -93,3 +93,76 @@ export function Menu() {
   </div>
   )
 }
+
+export function Sol() {
+  return (
+    <div>
+    {" "}
+    <Image 
+    src="/icons/sol.png" 
+    width={10} 
+    height={10} 
+    alt="sol"
+    />
+  </div>
+  )
+}
+
+
+export function Oscuro() {
+  return (
+    <div>
+    {" "}
+    <Image 
+    src="/icons/oscuro.png" 
+    width={10} 
+    height={10} 
+    alt="oscuro"
+    />
+  </div>
+  )
+}
+
+
+export function Equipaje() {
+  return (
+    <div>
+    {" "}
+    <Image 
+    src="/icons/equipaje.png" 
+    width={25} 
+    height={25} 
+    alt="equipaje"
+    />
+  </div>
+  )
+}
+
+export function Cerrar() {
+  return (
+    <div>
+    {" "}
+    <Image 
+    src="/icons/cerrar.png" 
+    width={25} 
+    height={25} 
+    alt="cerrar"
+    />
+  </div>
+  )
+}
+
+export function Email() {
+  return (
+    <a href="mailto:orlandocardenas0107@gmail.com">
+      <div>
+        <Image 
+          src="/icons/sobre.png" 
+          width={25} 
+          height={25} 
+          alt="email"
+        />
+      </div>
+    </a>
+  );
+}

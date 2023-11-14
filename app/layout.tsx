@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "@/app/ui/globals.css";
-import { roboto } from "@/app/ui/fonts";
+import { inter } from "@/app/ui/fonts";
 import PrincHearder from "@/app/ui/components/containers/Hearder";
 import PrincFoother from "@/app/ui/components/containers/Foother";
 
@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${roboto.className}`}
+      className={`${inter.className}`}
     >
       <body className="
       dark

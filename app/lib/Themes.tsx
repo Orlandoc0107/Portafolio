@@ -32,16 +32,17 @@ export default function Theme() {
       <select value={theme} onChange={(e) => handleChangeTheme(e.target.value as "light" | "dark")}
       className="
       font-serif 
-      px-6 
+      px-4 
       py-1 
       text-slate-700 
       rounded-lg 
       hover:bg-slate-500 
       hover:text-slate-900
-      bg-invisible 
+      bg-slate-200
+
       ">
-        <option value="light" >Light</option>
-        <option value="dark" >Dark</option>
+        <option value="light" >Light ...</option>
+        <option value="dark" >Dark ...</option>
       </select>
     </div>
   );
