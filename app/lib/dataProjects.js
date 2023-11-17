@@ -2,7 +2,7 @@ export const dataProjects = [
   {
     id:1,
     numer: "Proyect 3",
-    name: "Reqres (en proceso...)",
+    name: "Reqres",
     image: "/reqres.png",
     description:"Proyecto reqres Practica , con Next js 14, NextAuth",
     url:"https://reqres-in-ruddy.vercel.app/",
