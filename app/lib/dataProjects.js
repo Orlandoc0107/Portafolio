@@ -1,6 +1,16 @@
 export const dataProjects = [
   {
-    id: 1,
+    id:1,
+    numer: "Proyect 3",
+    name: "Reqres (en proceso...)",
+    image: "/reqres.png",
+    description:"Proyecto reqres Practica , con Next js 14, NextAuth",
+    url:"https://reqres-in-ruddy.vercel.app/",
+    technologies:"NextJs 14, Typescript, NextAuth, Tailwind Css",
+    github:"https://github.com/Orlandoc0107/reqres.in",
+  },
+  {
+    id: 2,
     numer: "Proyect 2",
     name: "tp",
     image: "/Proyect2.png",
@@ -10,7 +20,7 @@ export const dataProjects = [
     github: "https://github.com/Orlandoc0107/tp/tree/Api-Rest",
   },
   {
-    id: 2,
+    id: 3,
     numer: "Proyect 1",
     name: "EducaKids",
     image: "/EducaKids_version1.png",
