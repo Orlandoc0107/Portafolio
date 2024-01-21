@@ -12,6 +12,16 @@ import Image from "next/image";
 export default function Nav() {
   const { data: session, status } = useSession();
   const router = useRouter();
+
+  const scrollToContact = () => {
+    const contactoElement = document.getElementById('contacto');
+    if (contactoElement) {
+      contactoElement.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }
+  };
+
   const handleGoBack = () => {
     router.back();
   }
@@ -42,14 +52,17 @@ export default function Nav() {
           </Link>
         </div>
         <div>
-          <Link href="/proyectos"
+          <Link href="/#proyectos"
+          onClick={scrollToContact}
             className={styles.Link}>
             Proyectos
           </Link>
         </div>
         <div>
-          <Link href="/contact"
-            className={styles.Link}>
+          <Link href="/#contacto"
+            className={styles.Link}
+            onClick={scrollToContact}
+            >
             Contact
           </Link>
         </div>
@@ -107,14 +120,17 @@ export default function Nav() {
         </Link>
       </div>
       <div>
-        <Link href="/proyectos"
+        <Link href="/#proyectos"
+        onClick={scrollToContact}
           className={styles.Link}>
           Proyectos
         </Link>
       </div>
       <div>
-        <Link href="/contact"
-          className={styles.Link}>
+        <Link href="/#contacto"
+          className={styles.Link}
+          onClick={scrollToContact}
+          >
           Contact
         </Link>
       </div>

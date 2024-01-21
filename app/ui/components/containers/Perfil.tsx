@@ -17,11 +17,11 @@ export function Foto() {
       </div>
       <div className={styles.data}>
         <h1>Orlando Cardenas Villegas</h1>
-        <h4>
+        <h3>
           ¡Hola, Bienvenido a mi portafolio! Soy Programador Full-stack Web en
           Python con experiencia en desarrollo y especialización en Python.
-        </h4>
-        <h5>
+        </h3>
+        <h4>
           Mi enfoque es crear soluciones tecnológicas innovadoras que hagan que
           la web sea un lugar más funcional y atractivo. Te invito a explorar mi
           portafolio para descubrir ejemplos de mi trabajo y cómo puedo ayudar a
@@ -29,7 +29,7 @@ export function Foto() {
           Si tienes alguna pregunta o estás interesado en colaborar en futuros
           proyectos, no dudes en ponerte en contacto. ¡Espero que disfrutes
           explorando!
-        </h5>
+        </h4>
       </div>
     </div>
   );

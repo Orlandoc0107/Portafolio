@@ -3,6 +3,7 @@ import styles from '@/app/ui/home.module.css';
 import ProyectoList from "@/app/ui/components/client/ver";
 import { lusitana} from "./ui/fonts";
 import {Foto, Tecnologias} from "@/app/ui/components/containers/Perfil"
+import ContactForm from "@/app/contact/page"
 
 export default function Home() {
 
@@ -11,6 +12,7 @@ export default function Home() {
       <Foto />
       <Tecnologias />
       <ProyectoList />
+      <ContactForm />
     </main>
   );
 }

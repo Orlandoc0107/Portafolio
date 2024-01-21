@@ -13,37 +13,20 @@ const ProyectoCard: React.FC<{ proyecto: VerProyecto }> = ({ proyecto }) => (
   <div className={styles.proyectoCard}>
     <div className={styles.imagenContainer}>
       {proyecto.imagen ? (
-        <Image
-          width={350}
-          height={450}
-          quality={100}
-          src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${proyecto.imagen}`}
-          alt={`${proyecto.nombre} Imagen`}
-          className={styles.imagen}
-        />
+        <Link href={`/proyectos/${proyecto.id}`} passHref>
+          <Image
+            width={250}
+            height={350}
+            quality={100}
+            src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${proyecto.imagen}`}
+            alt={`${proyecto.nombre} Imagen`}
+            title={proyecto.nombre}
+            className={styles.imagen}
+          />
+        </Link>
       ) : (
         <span className={styles.span}> No hay imagen disponible</span>
       )}
-    </div>
-    <div className={styles.descripcionContainer}>
-      <div className={styles.span}>
-        <span>{proyecto.nombre}</span>
-      </div>
-    </div>
-    <div className={styles.cardInfo}>
-      <Link
-        className={styles.cardInfoDetals}
-        title="Ver Details"
-        href={`/proyectos/${proyecto.id}/`} key={proyecto.id} passHref>
-        <Image
-          src="/icons/detalles.png"
-          alt="detalles"
-          width={60}
-          height={40} />
-      </Link>
-      <div className={styles.cardInfonombre}>
-        <p>{proyecto.nombre}</p>
-      </div>
     </div>
   </div>
 );
@@ -83,7 +66,7 @@ const ProyectoList: React.FC = () => {
 
   if (loading) {
     return (
-      <div className={styles.Card}>
+      <div id="proyectos" className={styles.Card}>
         <div className={styles.Card2}>
           <SkeletonLoader />
           <SkeletonLoader />
@@ -94,7 +77,7 @@ const ProyectoList: React.FC = () => {
   }
 
   return (
-    <div className={styles.Card}>
+    <div id="proyectos"  className={styles.Card}>
       <div className={styles.Card2}>
         {proyectos.map((proyecto) => (
           <ProyectoCard key={proyecto.id} proyecto={proyecto} />

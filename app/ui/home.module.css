@@ -29,7 +29,7 @@
     padding: 0;
     box-sizing: border-box;
     min-height: 100vh;
-    background-image: url(/two.jpg);
+    background: linear-gradient(to right, #0E212E, #2d3748);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -58,6 +58,8 @@
     border-radius: 100%;
     padding: 0.2rem;
     margin: 0.2rem;
+    border-color: #0b5a79;
+    border-width: 1rem;
 }
 
 .nav {
@@ -99,13 +101,15 @@
     grid-template-areas:
         "containerfoto data";
     grid-template-columns: 30% 70%;
-    grid-template-rows: 90%;
+    grid-template-rows: 80%;
     background-color: #48445030;
     border-radius: 0.5rem;
     padding: 1rem;
-    margin: 2rem;
+    margin: 3rem;
     text-align: center;
     color: #e0e0e0;
+    width: 60%;
+    height: 30%;
 }
 
 .containerfoto {
@@ -130,7 +134,7 @@
     background-color: #48445020;
     border-radius: 0.5rem;
     padding: 1rem;
-    margin: 2rem;
+    margin: 3rem;
     text-align: center;
     color: #e0e0e0;
     display: grid;
@@ -147,7 +151,7 @@
 }
 
 .tecnologiasImage:hover {
-    transform: scale(2.0);
+    transform: scale(0.8);
 }
 
 .contenedortecnologiasImagenes {
@@ -195,6 +199,7 @@
 }
 
 .Card {
+    margin: 4rem;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -210,8 +215,8 @@
 }
 
 .proyectoCard {
-    width: 400px;
-    height: 500px;
+    width: 300px;
+    height: 350px;
     margin: 10px;
     position: relative;
     overflow: hidden;
@@ -233,15 +238,6 @@
     height: 100%;
 }
 
-.descripcionContainer {
-    color: #a0aec0;
-    padding: 2px;
-    text-decoration: dashed;
-}
-
-.descripcionContainer:hover {
-    background: rgba(84, 104, 110, 0.8);
-}
 
 .intro {
     width: 170px;
@@ -252,28 +248,6 @@
     line-height: 18px;
 }
 
-.cardInfo {
-    background-color: #0E212E;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: auto;
-    color: #0E212E;
-    line-height: 24px;
-    z-index: 20;
-    opacity: 0;
-    transition: bottom .10s, opacity .3s cubic-bezier(.33, .66, .66, 1);
-    align-items: center;
-    font-size: 6rem;
-    padding-bottom: 150px;
-    margin-bottom: 50px;
-    width: 100%;
-    height: auto;
-}
 
 .cardInfobutton {
     margin-top: 2%;
@@ -282,20 +256,6 @@
     padding-top: 20px;
 }
 
-.cardInfonombre {
-    font-size: 2rem;
-    color: #2d3748;
-}
-
-.cardInfoDetals{
-    width: auto;
-    height: auto;
-    margin: 2%;
-    border-color: #0E212E;
-    border-width: 5px;
-    top: 50px;
-    border-top: 40px;
-}
 
 .span {
     font-size: 50%;
@@ -304,10 +264,10 @@
 }
 
 .Link {
-    background-color: #75A6A3;
+    background-color: #2d3748;
     display: inline-block;
     text-decoration: none;
-    border: 2px solid #a0aec0;
+    border: 2px solid #41868E;
     border-radius: 0.375rem;
     padding: 0.5rem;
     font-size: 0.75rem;
@@ -317,13 +277,13 @@
     cursor: pointer;
     transition: border-color 0.15s ease-in-out, background-color 0.15s ease-in-out, color 0.15s ease-in-out;
     outline: none;
-    color: #2d3748;
+    color: #34baab;
 }
 
 .Link:hover {
     border-color: #71809601;
-    background-color: #cbd5e0;
-    color: #4a5568;
+    background-color: #818F9C;
+    color: #34baab;
 }
 
 .Link:focus {
@@ -347,13 +307,15 @@
     gap: 2rem;
     background-color: #34baab;
     padding: 1rem;
-    margin: 1rem;
+    margin: 3rem;
     justify-content: center;
     justify-items: center;
     border-radius: 0.5rem;
     border-color: #2d3748;
     box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
     border-width: 2px;
+    width: 50rem;
+    height: 80rem;
 }
 
 .proyecto2 {
@@ -363,8 +325,16 @@
 
 .proyectoTitulo {
     text-align: center;
-    font-size: 2.00rem;
-    color: #0E212E;
+    font-size: 5.00rem;
+    background: linear-gradient(to right, #0E212E, #41868E);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    border: 2px solid #2d3748;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .proyectoImage {
@@ -390,18 +360,28 @@
     animation: loadingAnimation 1.5s infinite;
 }
 
-.description {
-    font-size: 1.5rem;
-}
-
+.description,
 .tecnologiasProyect {
     font-size: 1.5rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
 }
 
 .urls {
     display: flex;
     flex-direction: row;
-    gap: 6rem;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.urls a {
+    color: #41868E;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.urls a:hover {
+    color: #34baab;
 }
 
 .btnAdmin {
@@ -410,6 +390,21 @@
     justify-content: center;
     gap: 3rem;
     justify-items: flex-end;
+    margin-top: 1.5rem;
+}
+
+.btnAdmin button {
+    padding: 1rem 2rem;
+    background-color: #34baab;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btnAdmin button:hover {
+    background-color: #2d3748;
 }
 
 .messageContainer {

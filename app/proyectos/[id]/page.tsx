@@ -81,6 +81,7 @@ export default function ProyectoId({ params }: { params: { id: string } }) {
           <div>
             {proyectoData.github != null ?
               (<Link target="_blank"
+              title="GitHub"
                 rel="noopener noreferrer"
                 href={proyectoData.github}>
                 <Image
@@ -95,6 +96,7 @@ export default function ProyectoId({ params }: { params: { id: string } }) {
           <div>
             {proyectoData.online != null ?
               (<Link target="_blank"
+              title="Online"
                 rel="noopener noreferrer"
                 href={proyectoData.online}
               >
