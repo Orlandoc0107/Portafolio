@@ -4,12 +4,13 @@ import Link from "next/link";
 export function Github() {
   return (
     <Link href="https://github.com/Orlandoc0107" target="_blank">
-        <div>
+        <div >
           <Image
             src="/icons/github.png"
             width={25}
             height={25}
             alt="Github"
+            
           />
         </div>
     </Link>
@@ -19,7 +20,7 @@ export function Github() {
 export function Linkedin() {
   return (
     <Link href="https://www.linkedin.com/in/orlando-cardenas-villegas-7a2390248/" target="_blank">
-    <div>
+    <div >
     <Image 
     src="/icons/linkedin.png" 
     width={25} 
@@ -66,7 +67,7 @@ export function Hogar() {
 export function Sobre() {
   return (
     <Link href="/contact">
-          <div>
+          <div >
     {" "}
     <Image 
     src="/icons/sobre.png" 

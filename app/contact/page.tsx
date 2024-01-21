@@ -1,34 +1,70 @@
-import React from 'react'
-import { Github, Linkedin,  Email } from '../ui/components/images/icons'
+'use client'
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
+import styles from "@/app/ui/home.module.css";
 
-export default function page() {
+function ContactForm() {
+  const [state, handleSubmit] = useForm("xnqengnq");
+
+  if (state.succeeded) {
+    return (
+      <main className={styles.main}>
+        <p>¡Email Enviado!</p>
+      </main>
+    );
+  }
+
   return (
-    <div className="min-h-screen flex justify-center items-center bg-gray-600
-    dark:bg-zinc-900">
-    <div className="
-    bg-white 
-    p-10 
-    rounded 
-    shadow-md w-96
-    dark:bg-indigo-900
-    ">
-      <h2 className="text-2xl font-semibold mb-6">Contact</h2>
-      <div className='flex gap-5 justify-center'>
-        <div>
-          <Github/>
-        </div>
-        <div>
-          <Linkedin/>
-        </div>
-        <div>
-          <Email/>
-        </div>
+    <main className={styles.main}>
+      <div className={styles.form}>
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <label htmlFor="email" className={styles.label}>
+            Email Address
+          </label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            className={styles.input}
+          />
+          <ValidationError
+            prefix="Email"
+            field="email"
+            errors={state.errors}
+          />
+
+          <label htmlFor="message" className={styles.label}>
+            Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows={4}
+            className={styles.textarea}
+          />
+          <ValidationError
+            prefix="Message"
+            field="message"
+            errors={state.errors}
+          />
+
+          <button
+            type="submit"
+            disabled={state.submitting}
+            className={styles.submit}
+          >
+            {state.submitting ? 'Submitting...' : 'Submit'}
+          </button>
+        </form>
       </div>
-      <br/>
-      <div>
-        <h4>Argentina / Misiones</h4>
-      </div>
-    </div>
-  </div>
-  )
+    </main>
+  );
 }
+
+function App() {
+  return (
+    <ContactForm />
+  );
+}
+
+export default App;

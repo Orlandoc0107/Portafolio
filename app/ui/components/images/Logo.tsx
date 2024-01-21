@@ -1,17 +1,20 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+import styles from '@/app/ui/home.module.css';
 
 export default function Logo() {
   return (
-    <div>
-      {" "}
+    <div className={styles.logo}>
+      <Link href="/logo">
       <Image 
       src="/Logo.png" 
-      width={50} 
-      height={50} 
+      width={80} 
+      height={80} 
       alt="Logo_Tipo"
-      className="rounded-full border-double border-4 border-sky-800 ..."
+      className={styles.logo}
       />
+      </Link>
     </div>
   );
 }
