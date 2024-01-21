@@ -8,7 +8,6 @@ import styles from '@/app/ui/form.module.css';
 import ProyectoId from '@/app/proyectos/[id]/page'
 
 export default function page({ params }: { params: { id: string } }) {
-  const [nombreOriginal, setNombreOriginal] = useState<string>('');
   const { data: session, status } = useSession();
   const [error, setError] = useState<string | null>(null);
   const token = session?.user.access_token;

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function Whatsapp() {
     const phoneNumber = '5493755378465';
@@ -11,7 +12,7 @@ export default function Whatsapp() {
                     target='_blank'
                     rel='noopener noreferrer'
                 >
-                    <img
+                    <Image
                         src="/icons/whatsapp.png"
                         width={40}
                         height={40}
