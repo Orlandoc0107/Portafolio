@@ -1,4 +1,5 @@
 'use client'
+
 import { ActualizarProyecto } from "@/app/lib/definitions"
 import { useState } from "react"
 import { Actualizar } from "@/app/utils/proyects"
