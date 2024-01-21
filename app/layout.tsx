@@ -9,7 +9,7 @@ import { lusitana } from '@/app/ui/fonts';
 
 export const metadata: Metadata = {
   title: "OrlandoCV",
-  description: "Portafolio Orlando Cardenas",
+  description: "Portafolio OrlandoC0107",
 };
 
 export default function RootLayout({
