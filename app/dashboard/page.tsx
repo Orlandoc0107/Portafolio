@@ -27,7 +27,7 @@ const Dashboard = () => {
   return (
     <main className={styles.main}>
       <div>
-      <h1>Dashboard</h1>
+      <h1>Bienvenido Orlando Cardenas</h1>
       </div>
     </main>
   );

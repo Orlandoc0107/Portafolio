@@ -13,6 +13,7 @@ export default function Home() {
       <Tecnologias />
       <ProyectoList />
       <ContactForm />
+      <Contact />
     </main>
   );
 }

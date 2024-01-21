@@ -1,13 +1,15 @@
 'use client'
 
 import NuevoProyecto from "@/app/ui/components/client/create"
-import { useSession, signIn, signOut } from "next-auth/react";
+import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import styles from "@/app/ui/home.module.css"
 
-export default function page() {
+const Page = () => {
   const { data: session } = useSession();
+
   const router = useRouter();
+
   if (!session) {
     return (
       <div className={styles.main}>
@@ -28,3 +30,5 @@ export default function page() {
     </div>
   )
 }
+
+export default Page;
