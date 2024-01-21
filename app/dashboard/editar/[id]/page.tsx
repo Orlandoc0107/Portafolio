@@ -9,7 +9,6 @@ import ProyectoId from '@/app/proyectos/[id]/page'
 
 export default function page({ params }: { params: { id: string } }) {
   const { data: session, status } = useSession();
-  const [error, setError] = useState<string | null>(null);
   const token = session?.user.access_token;
   const [nombre, setNombre] = useState<string>('');
   const [descripcion, setDescripcion] = useState<string>('');
@@ -34,7 +33,7 @@ export default function page({ params }: { params: { id: string } }) {
     if (token) {
       const resultado = await Actualizar({ proyectoId, ...actualizarProyecto, token, });
     } else {
-      console.error("Error: No hay un token disponible");
+      console.log("Error: No hay un token disponible");
     }
   };
 
@@ -108,7 +107,6 @@ export default function page({ params }: { params: { id: string } }) {
               >Actualizar</button>
             </form>
           </div>
-          {error && <div className={styles.messageContainer}>Error: {error}</div>}
 
           <ImagenComponent params={params} />
 
