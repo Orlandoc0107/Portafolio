@@ -8,10 +8,11 @@ import ImagenComponent from "@/app/ui/components/client/imgen"
 import styles from '@/app/ui/form.module.css';
 import ProyectoId from '@/app/proyectos/[id]/page'
 
-export default function page({ params }: { params: { id: string } }) {
+const Page = ({ params }: { params: { id: string } }) => {
   const { data: session, status } = useSession();
   const token = session?.user.access_token;
   const [nombre, setNombre] = useState<string>('');
+
   const [descripcion, setDescripcion] = useState<string>('');
   const [url, setUrl] = useState<string>('');
   const [tecnologias, setTecnologias] = useState<string>('');
@@ -117,3 +118,5 @@ export default function page({ params }: { params: { id: string } }) {
   </div>
       )
 }
+
+export default Page;
