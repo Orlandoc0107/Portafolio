@@ -200,7 +200,7 @@
 }
 
 .Card {
-    margin: 4rem;
+    margin: 3rem;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -216,8 +216,8 @@
 }
 
 .proyectoCard {
-    width: 300px;
-    height: 350px;
+    width: 200px;
+    height: 250px;
     margin: 10px;
     position: relative;
     overflow: hidden;
@@ -225,6 +225,9 @@
     box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
     text-align: center;
     transition: background .3s cubic-bezier(.33, .66, .66, 1);
+    border: 5px solid transparent;
+    background-clip: padding-box;
+    background-image: linear-gradient(45deg, #e0e0e0, #c0c0c0);
 }
 
 .imagenContainer {
@@ -306,7 +309,7 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    background-color: #34baab;
+    background-color: transparent;
     padding: 1rem;
     margin: 3rem;
     justify-content: center;
@@ -315,8 +318,10 @@
     border-color: #2d3748;
     box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
     border-width: 2px;
-    width: 50rem;
-    height: 80rem;
+    width: 40rem;
+    height: 60rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .proyecto2 {
@@ -327,22 +332,23 @@
 .proyectoTitulo {
     text-align: center;
     font-size: 5.00rem;
-    background: linear-gradient(to right, #0E212E, #41868E);
+    background: linear-gradient(to right, #34baab, #41868E);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    border: 2px solid #2d3748;
     display: inline-block;
     padding: 0.5rem 1rem;
     margin-bottom: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .proyectoImage {
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
     border-radius: 1rem;
     display: block;
     overflow: hidden;
-    width: 100%;
+    width: 60%;
     height: 100%;
     box-shadow: 3px 3px 20px rgba(0, .5, 0, .5);
 }
@@ -458,8 +464,8 @@
 }
 
 .skeletonLoader {
-    width: 300px;
-    height: 400px;
+    width: 200px;
+    height: 250px;
     margin: 10px;
     position: relative;
     overflow: hidden;
@@ -477,4 +483,35 @@
     to {
         opacity: 1;
     }
+}
+
+/* */
+
+.scrollToTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #41868E50;
+    color: #c4c8c5;
+    padding: 1rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.scrollToTopButton :hover {
+    background-color: #34baab;
+    color: #0E212E;
+    bottom: 20px;
+    right: 20px;
+    padding: 1rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.visible {
+    display: block;
 }

@@ -8,6 +8,7 @@ import Image from "next/image";
 import styles from "@/app/ui/home.module.css"
 import SkeletonLoader from '@/app/ui/components/SkeletonLoader'
 
+
 const ProyectoCard: React.FC<{ proyecto: VerProyecto }> = ({ proyecto }) => (
 
   <div className={styles.proyectoCard}>
@@ -15,8 +16,8 @@ const ProyectoCard: React.FC<{ proyecto: VerProyecto }> = ({ proyecto }) => (
       {proyecto.imagen ? (
         <Link href={`/proyectos/${proyecto.id}`} passHref>
           <Image
-            width={250}
-            height={350}
+            width={200}
+            height={250}
             quality={100}
             src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${proyecto.imagen}`}
             alt={`${proyecto.nombre} Imagen`}
@@ -71,13 +72,15 @@ const ProyectoList: React.FC = () => {
           <SkeletonLoader />
           <SkeletonLoader />
           <SkeletonLoader />
+          <SkeletonLoader />
+          <SkeletonLoader />
         </div>
       </div>
     );
   }
 
   return (
-    <div id="proyectos"  className={styles.Card}>
+    <div id="proyectos" className={styles.Card}>
       <div className={styles.Card2}>
         {proyectos.map((proyecto) => (
           <ProyectoCard key={proyecto.id} proyecto={proyecto} />

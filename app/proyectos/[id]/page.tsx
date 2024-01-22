@@ -81,33 +81,33 @@ export default function ProyectoId({ params }: { params: { id: string } }) {
           <div>
             {proyectoData.github != null ?
               (<Link target="_blank"
-              title="GitHub"
                 rel="noopener noreferrer"
                 href={proyectoData.github}>
                 <Image
+                  title="Github"
                   src="/icons/github.png"
                   alt="Github"
                   width={40}
                   height={40}
                 />
               </Link>) :
-              (<><Skeleton /></>)}
+              (<Skeleton />)}
           </div>
           <div>
             {proyectoData.online != null ?
               (<Link target="_blank"
-              title="Online"
                 rel="noopener noreferrer"
                 href={proyectoData.online}
               >
                 <Image
-                  src="/icons/red-global.png"
+                  title="Online"
+                  src="/icons/detalles.png"
                   alt="Online"
                   width={40}
                   height={40}
                 />
               </Link>) :
-              (<><Skeleton /> No Disponible</>)}
+              (<Skeleton />)}
           </div>
         </div>
         <div className={styles.btnAdmin}>

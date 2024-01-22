@@ -25,23 +25,29 @@
     padding: 1%;
 }
 
-
 .vistaeditar {
     display: grid;
-    grid-template-areas: "uno dos";
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-areas: "uno dos tres";
+    grid-template-columns: 5fr 0.5fr 6fr;
 }
 
 .vistaproyecto {
     grid-area: uno;
+    display: flex;
+    flex-direction: column;
+}
+
+.vista2{
+    grid-area :dos;
+    display: flex;
+    flex-direction: column;
 }
 
 .vistaform {
-    grid-area: dos;
+    margin-top: 10%;
+    grid-area: tres;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 

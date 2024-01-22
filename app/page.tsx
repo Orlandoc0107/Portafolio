@@ -4,6 +4,7 @@ import ProyectoList from "@/app/ui/components/client/ver";
 import { lusitana} from "./ui/fonts";
 import {Foto, Tecnologias} from "@/app/ui/components/containers/Perfil"
 import ContactForm from "@/app/contact/page"
+import ScrollToTopButton from "@/app/ui/components/client/TopButton"
 
 export default function Home() {
 
@@ -14,6 +15,7 @@ export default function Home() {
       <ProyectoList />
       <ContactForm />
       <Contact />
+      <ScrollToTopButton />
     </main>
   );
 }

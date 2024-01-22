@@ -40,8 +40,8 @@ export default function Nav() {
         <div onClick={handleGoBack} style={{ cursor: 'pointer' }}>
           <Image
             src="/icons/atras.png"
-            width={50}
-            height={50}
+            width={25}
+            height={25}
             alt="back"
           />
         </div>
@@ -81,8 +81,8 @@ export default function Nav() {
         <div onClick={handleGoBack} style={{ cursor: 'pointer' }}>
           <Image
             src="/icons/atras.png"
-            width={50}
-            height={50}
+            width={25}
+            height={25}
             alt="back"
           />
         </div>
@@ -108,8 +108,8 @@ export default function Nav() {
       <div onClick={handleGoBack} style={{ cursor: 'pointer' }}>
         <Image
           src="/icons/atras.png"
-          width={50}
-          height={50}
+          width={25}
+          height={25}
           alt="back"
         />
       </div>
