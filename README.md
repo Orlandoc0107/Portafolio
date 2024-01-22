@@ -1,26 +1,27 @@
+# Mi Portafolio
 
-First, run the development server:
+Bienvenido a mi portafolio, donde puedes explorar mis proyectos y conocer más sobre mi experiencia en el desarrollo de software.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tecnologías Utilizadas:
+- **Next.js 14:** Desarrollo de aplicaciones web modernas con React, optimización del rendimiento y generación de páginas estáticas.
+- **TypeScript:** Lenguaje de programación tipado que mejora la robustez y mantenibilidad del código.
+- **CSS y HTML:** Diseño y estructuración de las interfaces de usuario utilizando Grid y Flex para una maquetación flexible y eficiente.
+- **NextAuth:** Implementación de autenticación segura y eficiente.
+- **Django:** Desarrollo de aplicaciones web backend con un enfoque en la simplicidad y productividad.
 
+## Proyecto en Vivo:
+Puedes visitar mi portafolio en [https://portafolio-chi-plum.vercel.app/](https://portafolio-chi-plum.vercel.app/) para ver mis proyectos y obtener más información sobre mi trabajo.
 
-# Portafolio
+## Destacados:
+- **Next.js 14:** Utilizo la última versión de Next.js para aprovechar las características más recientes y garantizar un rendimiento óptimo.
+- **TypeScript:** La implementación de TypeScript mejora la claridad del código y facilita el mantenimiento a largo plazo.
+- **CSS con Grid y Flex:** Utilizo Grid y Flex en CSS para una maquetación flexible y eficiente, proporcionando una experiencia visual atractiva.
+- **NextAuth:** La autenticación segura es fundamental, y NextAuth garantiza una experiencia de usuario sin complicaciones.
+- **Django:** La combinación de frontend con Next.js y backend con Django ofrece una solución completa y eficiente.
 
-color1: #484450,
-color2: #466067,
-color3: #459a96,
-color4: #34baab,
-color5: #c4c8c5,
-#0E212E  --> bg-slate-900
-#41868E  --> bg-cyan-700
-#75A6A3  --> bg-sky-500
-#DEE4C0  --> bg-amber-200
-#F5F4E1  --> bg-amber-50
+## Cómo Contribuir:
+Si estás interesado en contribuir o colaborar en alguno de mis proyectos, no dudes en contactarme. Aprecio cualquier tipo de colaboración y feedback constructivo.
+
+¡Gracias por visitar mi portafolio!
+
+---
